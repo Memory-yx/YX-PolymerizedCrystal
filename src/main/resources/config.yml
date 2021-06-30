@@ -1,0 +1,173 @@
+MessagePrefix: '&f&l潮&b&l涌&f&l之&b&l心 &7> '
+
+
+
+#聚合几率的关键词
+CrystalSuccessrate: '   &8| &7聚合成功几率 &a'
+PowderSuccessrate: '   &8| &7聚合加成几率 &a'
+
+
+
+item:
+  #水晶ID可以自定义
+  Crystal1:
+    #该水晶的名称,必须与物品一样
+    name: '   &7[&fD&7]&8░&f测试用水晶'
+    startLore: '   &f &7&n单孔&7水晶插槽&f'
+    endLore: '   &f &f测试用水晶 &f&01'
+    #是否开启消耗材料功能,设置为flase则不需要材料,材料名称为MythicMobs中的物品ID
+    upgradeItem:
+      upgradeOpen: true
+      upgradeName: '薄绿的机械碎片'
+      upgradeAmount: '3'
+  Crystal2:
+    #该水晶的名称,必须与物品一样
+    name: '   &7[&fD&7]&8░&f测试用水晶2'
+    startLore: '   &f &7&n单孔&7水晶插槽&f'
+    endLore: '   &f &f测试用水晶 &f&01'
+    upgradeItem:
+      upgradeOpen: true
+      upgradeName: '薄绿的机械碎片'
+      upgradeAmount: '3'
+  Crystal3:
+    #该水晶的名称,必须与物品一样
+    name: '   &7[&fD&7]&8░&f测试用水晶3'
+    startLore: '   &f &7&n单孔&7水晶插槽&f'
+    endLore: '   &f &f测试用水晶 &f&01'
+    upgradeItem:
+      upgradeOpen: true
+      upgradeName: '薄绿的机械碎片'
+      upgradeAmount: '3'
+
+
+
+derivation:
+  #可放置的增幅粉末ID,可以自定义
+  Powder1:
+    name: '   &7[&fD&7]&8░&f测试用粉末'
+  Powder2:
+    name: '   &7[&fD&7]&8░&f测试用粉末2'
+
+
+
+slot:
+  #可以放置的聚合装备类型
+  Equip:
+    - 'IRON_SWORD'
+    - 'IRON_SHOVEL'
+    - 'IRON_PICKAXE'
+    - 'CROSSBOW'
+    - 'LEATHER_HELMET'
+    - 'LEATHER_CHESTPLATE'
+    - 'LEATHER_LEGGINGS'
+    - 'LEATHER_BOOTS'
+    - 'CHAINMAIL_HELMET'
+    - 'CHAINMAIL_CHESTPLATE'
+    - 'CHAINMAIL_LEGGINGS'
+    - 'CHAINMAIL_BOOTS'
+    - 'GOLDEN_HELMET'
+    - 'GOLDEN_CHESTPLATE'
+    - 'GOLDEN_LEGGINGS'
+    - 'GOLDEN_BOOTS'
+    - 'IRON_HELMET'
+    - 'IRON_CHESTPLATE'
+    - 'IRON_LEGGINGS'
+    - 'IRON_BOOTS'
+    - 'DIAMOND_HELMET'
+    - 'DIAMOND_CHESTPLATE'
+    - 'DIAMOND_LEGGINGS'
+    - 'DIAMOND_BOOTS'
+
+
+
+sound:
+  #聚合成功时的音效
+  PolymerizationSuccess: 'ITEM_TRIDENT_THUNDER'
+  #聚合失败时的音效
+  PolymerizationFail: 'ITEM_TRIDENT_RETURN'
+  #聚合无效时的音效
+  PolymerizationError: 'ENTITY_ITEM_BREAK'
+  #点击GUI时的音效
+  GuiClick: 'BLOCK_ANVIL_BREAK'
+
+
+
+#GUI中的文字只能使用&颜色符号
+gui:
+  #GUI显示的名字
+  GUIName: '&9&l水晶聚合装置'
+
+  Slot1:
+    type: 'LIGHT_BLUE_CARPET'
+    name: '   &7[&f&l槽位&7]&8░&b&l水晶压缩孔'
+    lore:
+      - '&f'
+      - ''
+      - '&f'
+      - '   &7放置进去的卡斯特水晶的体积，'
+      - '   &7将会在聚合时发生压缩，以至于'
+      - '   &7可以聚合在武器槽位之中。'
+      - '&f'
+      - '   &8┗ &7拿上水晶点击&b&n左键&7进行放置'
+      - ''
+      - '&f'
+    CustomModelData: '1'
+  Slot2:
+    type: 'YELLOW_CARPET'
+    name: '   &7[&f&l槽位&7]&8░&e&l粉末容器'
+    lore:
+      - '&f'
+      - ''
+      - '&f'
+      - '   &7将粉末放置在容器中，在水晶开'
+      - '   &7始聚合时粉末会撒在周围，神奇'
+      - '   &7的力量将会提高聚合的可能性。'
+      - '&f'
+      - '   &8┗ &7使用粉末点击&e&n左键&7倒进容器中'
+      - ''
+      - '&f'
+    CustomModelData: '1'
+  Slot3:
+    type: 'BROWN_CARPET'
+    name: '   &7[&f&l信息&7]&8░&a&l材料说明全息'
+    lore:
+      - '&f'
+      - ''
+      - '&f'
+      - '   &7当卡斯特水晶被放置时，说明全'
+      - '   &7息将会出现所需要的材料。'
+      - '&f'
+      - '   &8┗ &7若&a&n未出现&7材料则不需要材料。'
+      - ''
+      - '&f'
+    CustomModelData: '1'
+  Slot4:
+    type: 'BREWING_STAND'
+    name: '   &7[&f&l功能&7]&8░&c&l进行聚合'
+    lore:
+      - '&f'
+      - ''
+      - '&f'
+      - '   &7将卡斯特水晶压缩后聚合在装'
+      - '   &7备之中，使其得到特殊的加成效'
+      - '   &7果。'
+      - '&f'
+      - '   &8| &7必要: &b装备&8/&b水晶&8/&7&m粉末&8/&b材料'
+      - '   &8┗ &7点击&c&n左键&7进行聚合'
+      - ''
+      - '&f'
+    CustomModelData: '1'
+  Slot5:
+    type: 'GRAY_CARPET'
+    name: '   &7[&f&l槽位&7]&8░&9&l装备检定器'
+    lore:
+      - '&f'
+      - ''
+      - '&f'
+      - '   &7可以将装备放置在其中，如有不'
+      - '   &7合将会被丢弃出来。'
+      - '&f'
+      - '   &8┗ &7拿上装备点击&9&n左键&7进行检定'
+      - ''
+      - '&f'
+    CustomModelData: '1'

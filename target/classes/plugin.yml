@@ -1,0 +1,15 @@
+name: YX-PolymerizedCrystal
+version: 1.0-SNAPSHOT
+main: memory520.polymerizedcrystal.PolymerizedCrystal
+api-version: 1.15
+softdepend:
+  - MythicMobs
+
+commands:
+  pc:
+    description: 打开聚合界面
+
+#制作几率系统,通过物品lore判断几率
+#制作几率加成石系统,通过物品lore判断加成几率
+#制作消耗物品显示系统,只能设置一种消耗品,消耗品读取mm的物品,并且会显示在GUI中
+#优化GUI中的显示(物品Lore提示,音效,消息提示,聚合时物品改变动画)
