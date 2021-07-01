@@ -1,5 +1,5 @@
 name: YX-PolymerizedCrystal
-version: 1.0.0
+version: 1.0.1
 main: memory520.polymerizedcrystal.PolymerizedCrystal
 api-version: 1.15
 softdepend:
@@ -8,3 +8,9 @@ softdepend:
 commands:
   pc:
     description: 打开聚合界面
+
+permissions:
+  pc.open.use:
+    default: true
+  pc.reload.admin:
+    default: op

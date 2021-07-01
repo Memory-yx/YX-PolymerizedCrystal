@@ -9,6 +9,7 @@ PowderSuccessrate: '   &8| &7聚合加成几率 &a'
 
 
 item:
+  #水晶ID可以自定义
   Crystal1:
     #该水晶的名称,必须与物品一样
     name: '   &7[&fD&7]&8░&f测试用水晶'
@@ -41,7 +42,7 @@ item:
 
 
 derivation:
-  #可放置的增幅粉末名称
+  #可放置的增幅粉末ID,可以自定义
   Powder1:
     name: '   &7[&fD&7]&8░&f测试用粉末'
   Powder2:
