@@ -101,7 +101,7 @@ public final class PolymerizedCrystal extends JavaPlugin implements Listener {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (args.length > 0 && args[0].equalsIgnoreCase("open")) {
             if (sender instanceof Player) {
-                if (!sender.hasPermission("pc.open.ordinary")) {
+                if (!sender.hasPermission("pc.open.use")) {
                     sender.sendMessage("§c你没有这个权限!");
                     return true;
                 }
@@ -112,7 +112,7 @@ public final class PolymerizedCrystal extends JavaPlugin implements Listener {
                 return true;
             }
         }else if(args.length > 0 && args[0].equalsIgnoreCase("reload")){
-            if (!sender.hasPermission("pc.reload.use")) {
+            if (!sender.hasPermission("pc.reload.admin")) {
                 sender.sendMessage("§c你没有这个权限!");
                 return true;
             }

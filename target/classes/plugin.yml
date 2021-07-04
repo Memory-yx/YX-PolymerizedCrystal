@@ -1,5 +1,5 @@
 name: YX-PolymerizedCrystal
-version: 1.0.1
+version: 1.0.2
 main: memory520.polymerizedcrystal.PolymerizedCrystal
 api-version: 1.15
 softdepend:
